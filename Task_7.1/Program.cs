@@ -24,7 +24,7 @@ Console.WriteLine();
 
 double[,] randomArray = new double [m, n];
 
-void FillArray(double[,] array)                                          
+void GetArray(double[,] array)                                          
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -35,7 +35,7 @@ void FillArray(double[,] array)
     }
 }
 
-void PrintArray(double[,] array)
+void ShowArray(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -47,10 +47,13 @@ void PrintArray(double[,] array)
     }
 }
 
-FillArray(randomArray);
-PrintArray(randomArray);
+GetArray(randomArray);
+ShowArray(randomArray);
 Console.WriteLine();
 Console.ReadKey();
+Console.Clear();
+
+
 
 
 

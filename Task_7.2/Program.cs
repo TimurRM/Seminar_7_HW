@@ -27,7 +27,7 @@ int max = Convert.ToInt32(Console.ReadLine());
 Console.Clear();
 Console.WriteLine();
 
-void FillArray(int[,] array)
+void GetArray(int[,] array)
 {
     for (int m = 0; m < array.GetLength(0); m++)
     {
@@ -37,7 +37,7 @@ void FillArray(int[,] array)
         }
     }
 }
-void PrintArray(int[,] array)
+void ShowArray(int[,] array)
 {
     for (int m = 0; m < array.GetLength(0); m++)
     {
@@ -51,27 +51,28 @@ void PrintArray(int[,] array)
 
 int[,] array = new int[m, n];
 
-FillArray(array);
-PrintArray(array);
+GetArray(array);
+ShowArray(array);
 Console.WriteLine();
 
 Console.Write("Input number: ");
-int num = int.Parse(Console.ReadLine());
-string Position(int[,] array)
+int findNumber = int.Parse(Console.ReadLine());
+string Element(int[,] array)
 {
-    string result = string.Empty;
+    string find = string.Empty;
     for (int m = 0; m < array.GetLength(0); m++)
     {
         for (int n = 0; n < array.GetLength(1); n++)
         {
-            if (num == array[m, n]) result += $"({m}, {n})";
+            if (findNumber == array[m, n]) find += $"({m}, {n})";
         }
     }
-    if (result == string.Empty) result = "This element doesn't exist";
-    return result;
+    if (find == string.Empty) find = "This element doesn't exist";
+    return find;
 }
-Console.WriteLine($"{num} -> {Position(array)}");
+Console.WriteLine($"{findNumber} -> {Element(array)}");
 
 
 Console.WriteLine();
 Console.ReadKey();
+Console.Clear();
