@@ -6,16 +6,16 @@
 
 Console.Clear();
 
-Console.Write("Введите количество строк массива: ");
+Console.Write("Input quantity of array rows: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите количество столбцов массива: ");
+Console.Write("Input quantity of array columns: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите минимальный элемент массива: ");
+Console.Write("Input min element of array: ");
 int min = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите максимальный элемент массива: ");
+Console.Write("Input max element of array: ");
 int max = Convert.ToInt32(Console.ReadLine());
 
 Console.Clear();
