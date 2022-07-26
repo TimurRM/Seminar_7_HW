@@ -39,11 +39,11 @@ int[,] GetArray(int m, int n)
 
 void ShowArray(int[,] array)
 {
-    for (int row = 0; row < array.GetLength(0); row++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int column = 0; column < array.GetLength(1); column++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{array[row, column]}     ");
+            Console.Write($"{array[i, j]}     ");
         }
         Console.WriteLine();
     }
